@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/campFragment">
+
+    <fragment
+        android:id="@+id/campFragment"
+        android:name="com.berkayyetis.campbooktesting.view.CampFragment"
+        android:label="CampFragment" >
+        <action
+            android:id="@+id/action_campFragment_to_campDetailFragment"
+            app:destination="@id/campDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/campDetailFragment"
+        android:name="com.berkayyetis.campbooktesting.view.CampDetailFragment"
+        android:label="CampDetailFragment" >
+        <action
+            android:id="@+id/action_campDetailFragment_to_imageApiFragment"
+            app:destination="@id/imageApiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageApiFragment"
+        android:name="com.berkayyetis.campbooktesting.view.ImageApiFragment"
+        android:label="ImageApiFragment" />
+</navigation>
